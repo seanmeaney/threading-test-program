@@ -89,7 +89,6 @@ void singleFight(FighterType *hero, FighterType *pirate) {
             }
         }
     }
-    free(pirate);
 }
 
 /**
@@ -113,13 +112,14 @@ void *fightProc(void *arg) {
         
         if (hasNext(f->pirates)) {
             pirate = (f->dir == FRONT) ? popFront(f->pirates) : popBack(f->pirates);
-            singleFight(f->hero, pirate);
         }
 
         if (sem_post(f->dqMutex) < 0) {
             printf("semaphore post error\n");
             exit(1);
         }
+        singleFight(f->hero, pirate);
+        free(pirate);
         usleep(1000);
     }
     return (0);
