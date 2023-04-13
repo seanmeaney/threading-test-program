@@ -33,6 +33,8 @@ void initScenarioThreads(RunSpecsType *r[NUM_SCENARIOS]) {
     pthread_t t[NUM_SCENARIOS];
     for (int i = 0; i < NUM_SCENARIOS; i++) {
         pthread_create(&t[i], NULL, scenarioProc, r[i]);
+    }
+    for (int i = 0; i < NUM_SCENARIOS; i++) {
         pthread_join(t[i], NULL);
     }
 }
