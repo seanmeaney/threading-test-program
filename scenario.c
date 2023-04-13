@@ -1,4 +1,11 @@
+#include <semaphore.h>
+#include <stdlib.h>
+
 #include "defs.h"
+#include "scenario.h"
+#include "thread_stuff.h"
+#include "deque.h"
+#include "fighter.h"
 
 /**
  * @brief initialize FightSpec, allocates memory, assigns data

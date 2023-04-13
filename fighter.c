@@ -1,5 +1,8 @@
-#include "defs.h"
+#include <stdlib.h>
 
+#include "defs.h"
+#include "scenario.h"
+#include "deque.h"
 /**
  * @brief initialize Fighter, allocates memory, assigns data
  * 

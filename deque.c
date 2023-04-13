@@ -1,4 +1,8 @@
+#include <stdlib.h>
+
 #include "defs.h"
+#include "deque.h"
+#include "fighter.h"
 
 /**
  * @brief Initializes deque, allocates memory, assigns head and tail pointers to NULL

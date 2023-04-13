@@ -1,4 +1,9 @@
+#include <stdlib.h>
+#include <stdio.h>
+
 #include "defs.h"
+#include "stats.h"
+#include "deque.h"
 
 /**
  * @brief initializes NUM_SCENARIOS of Stats types by allocating memory and setting counters to 0
@@ -44,7 +49,7 @@ void cleanupStats(StatsType *s[NUM_SCENARIOS]) {
  * @brief prints formatted statistics data, seperated by scenario
  * 
  * @param s     array of StatsType
- * @param numRuns number of rums executed
+ * @param numRuns number of runs executed
  */
 void printStats(StatsType *s[NUM_SCENARIOS], int numRuns) {
     printf("%s", "+-------------------------------------------------------------+\n");

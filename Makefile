@@ -1,4 +1,4 @@
-OPT = -Wall
+OPT = -Wall -g
 OBJ = main.o deque.o fighter.o thread_stuff.o scenario.o stats.o
 
 piratewars:	$(OBJ)

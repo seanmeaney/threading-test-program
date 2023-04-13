@@ -1,4 +1,15 @@
+#include <pthread.h>
+#include <semaphore.h>
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
 #include "defs.h"
+#include "thread_stuff.h"
+#include "deque.h"
+#include "stats.h"
+#include "scenario.h"
 
 /**
  * @brief spawn threads to process deque in both directions, pass fightProc function and FightSpecsType 

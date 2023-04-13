@@ -1,4 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 #include "defs.h"
+#include "stats.h"
+#include "scenario.h"
 
 int main(int argc, char *argv[]) {
     StatsType *s[NUM_SCENARIOS];
