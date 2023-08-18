@@ -1,4 +1,4 @@
-Multithreaded test program that simulates multiple fight sceneraios between heros and pirates with 100 runs per scenario.
+Multithreaded test program that simulates multiple fight scenarios between heros and pirates with 100 runs per scenario.
 
 Includes a custom deque implementation using relevant concurrency mechanisms to allow for double ended operation.
 
